@@ -217,7 +217,6 @@ def get_stats():
     items = Bookmark.query.filter_by(user_id=current_user).all()
 
     for item in items:
-        print(item)
         new_link = {
             'visits': item.visits,
             'url': item.url,
